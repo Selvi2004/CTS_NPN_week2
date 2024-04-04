@@ -14,6 +14,11 @@ class BankAccount:
             self.balance -= amount
             self.transaction_history.append(f"Withdrew ${amount}")
 
+    def view_transaction_history(self):
+        print("Transaction History:")
+        for transaction in self.transaction_history:
+            print(transaction)
+
   
 
 
