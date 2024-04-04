@@ -7,7 +7,9 @@ class BankAccount:
         self.balance += amount
         self.transaction_history.append(f"Deposited ${amount}")
 
-  
+    def check_balance(self):
+        print(f"Your balance is ${self.balance}")
+
 
 
 def main():
