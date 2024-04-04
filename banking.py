@@ -6,6 +6,13 @@ class BankAccount:
     def deposit(self, amount):
         self.balance += amount
         self.transaction_history.append(f"Deposited ${amount}")
+    #withdraw account money   
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient funds.")
+        else:
+            self.balance -= amount
+            self.transaction_history.append(f"Withdrew ${amount}")
 
   
 
