@@ -19,7 +19,9 @@ class BankAccount:
         for transaction in self.transaction_history:
             print(transaction)
 
-  
+    def check_balance(self):
+        print(f"Your balance is ${self.balance}")
+
 
 
 def main():
